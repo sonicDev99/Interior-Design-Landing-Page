@@ -1,0 +1,162 @@
+/* General styles resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+/* ---------------------------------------------------------------- */
+
+body {
+    background: url('../images/interior-design.jpg');
+    background-size: cover;
+    background-position: center;
+    max-height: 100vh;
+    min-width: 100vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-weight: 700;
+}
+nav {
+    display: flex;
+    margin: 3rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+.lists {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.lists::after {
+    content: '';
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    height: 2px;
+    border-bottom: 3px solid #ffffff;
+    width: 72%;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+svg {
+    position: absolute;
+    width: 160%;
+    left: -3.5rem;
+    top: 35px;
+}
+svg path {
+    fill: #ffffff;
+}
+
+.content {
+    margin: 10rem 6rem;
+    margin-bottom: 5rem;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+h1 {
+    width: 40rem;
+}
+.content button {
+    font-size: 2rem;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 45px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.puzzle {
+    width: 13rem;
+    margin: 2rem;
+    padding: 1.5rem;
+    background: #2f4c60;
+    position: absolute;
+    left: 45rem;
+    top: 38rem;
+}
+
+.puzzle img {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    background: #ffffff;
+}
+.puzzle p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+.bulb {
+    width: 13rem;
+    margin: 2rem;
+    padding: 1.5rem;
+    background: #2f4c60;
+    position: absolute;
+    left: 60rem;
+    top: 15rem;
+}
+
+.bulb img {
+    transform: scaleX(-1);
+    width: 100px;
+    background: #ffffff;
+    height: 40px;
+    border-radius: 30px;
+}
+.bulb p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+.line1 img {
+    background: none;
+    width: 100px;
+    position: absolute;
+    left: 66rem;
+    top: 47rem;
+}
+.line2 img {
+    transform: rotate(90deg);
+    background: none;
+    width: 100px;
+    position: absolute;
+    left: 66rem;
+    top: 35rem;
+}
+
+@media screen and (max-width: 60em) {
+    .lists {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+}
